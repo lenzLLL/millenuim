@@ -20,20 +20,20 @@ export default function Header() {
   return (
     <header className="bg-white dark:bg-[#1E1E1E] border-b border-[#E7E8EC] dark:border-[#333333] sticky top-0 z-50">
       {/* Top contact bar */}
-      <div className="bg-[#1B2951] text-white py-2">
+      <div className="bg-[#1B2951] text-white py-1 md:py-2">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center text-sm">
-            <div className="flex items-center space-x-4">
-              <div className="flex items-center space-x-2">
-                <Phone size={16} />
-                <span>+33 1 23 45 67 89</span>
+          <div className="flex justify-between items-center text-xs md:text-sm gap-2">
+            <div className="flex items-center space-x-2 md:space-x-4">
+              <div className="hidden sm:flex items-center space-x-1 md:space-x-2">
+                <Phone size={14} className="md:w-4 md:h-4" />
+                <span className="hidden sm:inline">+33 1 23 45 67 89</span>
               </div>
-              <div className="flex items-center space-x-2">
+              <div className="hidden md:flex items-center space-x-2">
                 <Mail size={16} />
                 <span>contact@buildmillennium.fr</span>
               </div>
             </div>
-            <div className="hidden md:block text-sm">
+            <div className="hidden md:block text-xs md:text-sm">
               Lun-Ven 9h-18h | Sam 9h-17h
             </div>
           </div>
@@ -42,13 +42,13 @@ export default function Header() {
 
       {/* Main navigation */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-16 md:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2 flex-shrink-0">
+          <Link href="/" className="flex items-center space-x-1 md:space-x-2 flex-shrink-0">
             <img
               src="/lg.png"
               alt="Build Millennium Group"
-              className="h-16  w-auto"
+              className="h-10 md:h-16 w-auto"
             />
          
           </Link>
