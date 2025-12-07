@@ -48,7 +48,7 @@ export default function Header() {
             <img
               src="/lg.png"
               alt="Build Millennium Group"
-              className="h-16 lg:h-24 w-auto"
+              className="h-16  w-auto"
             />
          
           </Link>
