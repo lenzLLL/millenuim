@@ -1,9 +1,7 @@
 {
   "buildCommand": "npm run build",
-  "devCommand": "npm run dev",
-  "installCommand": "npm install",
   "env": {
-    "NODE_OPTIONS": " --no-warnings"
+    "NODE_OPTIONS": "--no-warnings"
   },
   "headers": [
     {
