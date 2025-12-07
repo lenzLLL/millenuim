@@ -25,12 +25,12 @@ export default function Header() {
           <div className="flex justify-between items-center text-sm">
             <div className="flex items-center space-x-4">
               <div className="flex items-center space-x-2">
-                <Phone size={16} />
-                <span className='text-sm lg:text-lg'>+33 1 23 45 67 89</span>
+                <Phone className='text-xs lg:text-lg' size={16} />
+                <span className='text-xs lg:text-lg'>+33 1 23 45 67 89</span>
               </div>
               <div className="flex items-center space-x-2">
-                <Mail size={16} />
-                <span className='text-sm lg:text-lg'>contact@buildmillennium.fr</span>
+                <Mail className='text-xs lg:text-lg' size={16} />
+                <span className='text-xs lg:text-lg'>contact@buildmillennium.fr</span>
               </div>
             </div>
             <div className="hidden md:block text-sm">
