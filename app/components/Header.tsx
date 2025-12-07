@@ -11,6 +11,7 @@ export default function Header() {
     { name: 'Accueil', href: '/' },
     { name: 'À Propos', href: '/about' },
     { name: 'Nos Services', href: '/services' },
+    { name: 'Nos Projets', href: '/projets' },
     { name: 'Maisons Préfabriquées', href: '/maisons-preconstruites' },
     { name: 'Blog', href: '/blog' },
     { name: 'Contact', href: '/contact' },
@@ -45,7 +46,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 flex-shrink-0">
             <img
-              src="https://ucarecdn.com/31f50039-6f9c-4f27-a912-1a93ef40deb5/-/format/auto/"
+              src="/lg.png"
               alt="Build Millennium Group"
               className="h-16 lg:h-24 w-auto"
             />
