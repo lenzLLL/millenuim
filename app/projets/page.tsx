@@ -134,7 +134,14 @@ export default function ProjetsPage() {
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-[#1B2951] to-[#2C3E50] text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
+          style={{
+            backgroundImage:
+              "url(https://images.pexels.com/photos/3862379/pexels-photo-3862379.jpeg?auto=compress&cs=tinysrgb&w=1600)",
+          }}
+        />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Nos Réalisations
             <span className="block text-[#FF8C42]">
