@@ -1,6 +1,5 @@
+"use client"
 import React, { useState } from "react";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
 import {
   Phone,
   Mail,
@@ -10,6 +9,8 @@ import {
   Send,
   CheckCircle,
 } from "lucide-react";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -25,7 +26,7 @@ export default function ContactPage() {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e:any) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
@@ -33,7 +34,7 @@ export default function ContactPage() {
     }));
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e:any) => {
     e.preventDefault();
     setIsSubmitting(true);
 
@@ -430,7 +431,7 @@ export default function ContactPage() {
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
-                    allowFullScreen=""
+                    allowFullScreen={true}
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                   ></iframe>
