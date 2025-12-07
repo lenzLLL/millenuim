@@ -3,7 +3,7 @@
   "devCommand": "npm run dev",
   "installCommand": "npm ci",
   "env": {
-    "NODE_OPTIONS": "--no-warnings"
+    "NODE_OPTIONS": " --no-warnings"
   },
   "headers": [
     {
