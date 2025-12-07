@@ -78,8 +78,14 @@ export default defineConfig({
     dedupe: ['react', 'react-dom'],
   },
   build: {
-    minify: false,
-    sourcemap: true,
+    minify: 'terser',
+    sourcemap: false,
+    target: 'esnext',
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
   },
   clearScreen: false,
   server: {
