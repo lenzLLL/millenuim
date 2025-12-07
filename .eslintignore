@@ -1,0 +1,11 @@
+node_modules
+.next
+build
+dist
+out
+__create
+plugins
+src
+vite.config.ts
+vitest.config.ts
+react-router.config.ts

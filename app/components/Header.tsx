@@ -41,26 +41,24 @@ export default function Header() {
 
       {/* Main navigation */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-3">
+          <Link href="/" className="flex items-center space-x-2 flex-shrink-0">
             <img
               src="https://ucarecdn.com/31f50039-6f9c-4f27-a912-1a93ef40deb5/-/format/auto/"
               alt="Build Millennium Group"
-              className="h-10 w-auto"
+              className="h-16 lg:h-24 w-auto"
             />
-            <div className="text-xl font-bold text-[#1B2951] dark:text-white">
-              Build Millennium Group
-            </div>
+         
           </Link>
 
           {/* Desktop navigation */}
-          <nav className="hidden lg:flex space-x-8">
+          <nav className="hidden lg:flex space-x-1 flex-1 justify-center">
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-[#666A6F] dark:text-gray-400 hover:text-[#1B2951] dark:hover:text-white font-medium transition-colors"
+                className="text-[#666A6F] dark:text-gray-300 hover:text-[#1B2951] dark:hover:text-white font-semibold transition-colors px-3 py-2"
               >
                 {item.name}
               </Link>
